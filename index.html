@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de Código Postal</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <h2>Formulario de Dirección</h2>
+    <form id="addressForm">
+        <label for="cp">Código Postal *</label>
+        <input 
+            type="text" 
+            id="cp" 
+            name="cp" 
+            pattern="[0-9]{5}" 
+            title="Debe ingresar exactamente 5 números" 
+            required
+            placeholder="Ejemplo: 12345"
+        >
+
+        <button type="submit">Validar y Enviar</button>
+    </form>
+
+    <script src="script2.js"></script>
+</body>
+</html>
